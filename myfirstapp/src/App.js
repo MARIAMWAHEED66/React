@@ -1,6 +1,14 @@
 import "./App.css";
+import products from "./products";
 
 function App() {
+  const productList = products.map((product) => (
+    <div>
+      <img src={product.image} />
+      <h4>{product.name}</h4>
+      <h4>{product.price}</h4>
+    </div>
+  ));
   return (
     <div className="style">
       <header className="home-header">
@@ -14,6 +22,9 @@ function App() {
           alt="pet shop"
         ></img>
       </header>
+      <div>
+        <body>{productList}</body>
+      </div>
     </div>
   );
 }
