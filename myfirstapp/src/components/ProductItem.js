@@ -1,11 +1,14 @@
 import products from "../products";
+import { Product, Item } from "../styles";
 
 const ProductItem = (props) => {
-  <div>
-    <img src={props.roduct.image} />
-    <h4>{props.product.name}</h4>
-    <h4>{props.product.price}</h4>
-  </div>;
+  return (
+    <Product>
+      <img src={props.product.image} alt={props.product.name} />
+      <Item>{props.product.name}</Item>
+      <p> Price:{props.product.price}</p>
+    </Product>
+  );
 };
 
 export default ProductItem;
