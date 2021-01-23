@@ -1,10 +1,13 @@
 import "./App.css";
 import Timeline from "./components/Timeline";
+import { GlobalStyle } from "./styles";
+import { Title } from "./styles";
 
 function App() {
   return (
     <div>
-      <h1>Mariam's Timeline</h1>
+      <Title>Mariam's Timeline</Title>
+      <GlobalStyle />
       <Timeline />
     </div>
   );

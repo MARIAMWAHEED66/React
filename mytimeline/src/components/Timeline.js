@@ -1,13 +1,12 @@
 import timelineData from "../data";
-import TimelineItem from "./Timelineitem";
+import TimelineItem from "./TimelineItem";
+import { TimelineContainer } from "../styles";
 
-const Timeline = () =>{
-return (
-    <div className="....">
-      {timelineData.map((data, id) => (
-        <TimelineItem data={data} key={id} />
-      ))}};
-    </div>
-  );
+const Timeline = () => {
+  const DataList = timelineData.map((data) => {
+    return <TimelineItem key={data.id} data={data} />;
+  });
+  return <TimelineContainer> {DataList}</TimelineContainer>;
+};
 
 export default Timeline;

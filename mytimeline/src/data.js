@@ -1,28 +1,25 @@
 const timelineData = [
   {
+    id: 1,
     text: "I was born",
-    date: "27/4/1997",
-    category: {
-      color: ,
-      img: 
-    },
+    date: "April 1997",
+  },
+  {
+    id: 2,
+    text: "I graduated from high school",
+    date: " June 2015",
+  },
+  {
+    id: 3,
+    text: "I graduated from university of Bahrain",
+    date: "June 2020",
   },
 
   {
-    text: "....",
-    date: "......",
-    category: {
-      color: ,
-    },
-  },
-
-  {
-    text: "....",
-    date: "......",
-    category: {
-      color: ,
-    },
+    id: 4,
+    text: "Going to graduate from CODED Bootcamp",
+    date: "April 2021",
   },
 ];
 
-export default data;
+export default timelineData;

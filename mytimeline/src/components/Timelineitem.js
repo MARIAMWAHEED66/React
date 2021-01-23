@@ -1,14 +1,14 @@
-import timelineData from "../data";
-
-const TimelineItem = ({ data }) => (
-  <div className="...">
-    <div className="...">
-      <span className=".." style={{ background: data.category.color }}></span>
-      <time>{data.date}</time>
-      )};
-      <span className=".." />
+import { TimelineContent } from "../styles";
+const TimelineItem = (props) => {
+  return (
+    <div className="timeline-item">
+      <TimelineContent>
+        <time>{props.data.date}</time>
+        <p>{props.data.text}</p>
+        <span />
+      </TimelineContent>
     </div>
-  </div>
-);
+  );
+};
 
 export default TimelineItem;
